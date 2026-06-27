@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CH Consulting | Civil Engineering Advisory</title>
+    <meta
+      name="description"
+      content="Civil engineering consulting services for infrastructure, planning, and project delivery."
+    />
+    <style>
+      :root {
+        --navy: #15324a;
+        --teal: #2f6f73;
+        --sand: #f4efe6;
+        --text: #23313f;
+        --muted: #5f6b76;
+        --white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        color: var(--text);
+        background: var(--sand);
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--navy), var(--teal));
+        color: var(--white);
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 0;
+      }
+
+      .brand {
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1rem;
+        color: rgba(255,255,255,0.9);
+      }
+
+      .hero {
+        padding: 5rem 0 4rem;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        margin: 0 0 1rem;
+        line-height: 1.15;
+      }
+
+      .hero p {
+        font-size: 1.05rem;
+        color: rgba(255,255,255,0.9);
+        margin: 0 0 1.5rem;
+        max-width: 700px;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.85rem 1.3rem;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
+      .btn-primary {
+        background: var(--white);
+        color: var(--navy);
+      }
+
+      .btn-secondary {
+        border: 1px solid rgba(255,255,255,0.5);
+        color: var(--white);
+      }
+
+      .hero-card {
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.18);
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+        backdrop-filter: blur(8px);
+      }
+
+      .hero-card h3 {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+      }
+
+      .hero-card ul {
+        padding-left: 1rem;
+        margin: 0;
+      }
+
+      main {
+        padding: 4rem 0;
+      }
+
+      section {
+        margin-bottom: 3rem;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .section-subtitle {
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+      }
+
+      .card {
+        background: var(--white);
+        border-radius: 1rem;
+        padding: 1.4rem;
+        box-shadow: 0 10px 30px rgba(21, 50, 74, 0.08);
+      }
+
+      .card h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .about-block {
+        background: var(--white);
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 30px rgba(21, 50, 74, 0.08);
+      }
+
+      .contact-box {
+        background: var(--navy);
+        color: var(--white);
+        padding: 1.5rem;
+        border-radius: 1rem;
+      }
+
+      footer {
+        padding: 1.5rem 0 2rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 800px) {
+        .hero,
+        .about,
+        .cards {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding-top: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a class="brand" href="#">CH Consulting</a>
+          <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <div>
+            <h1>Trusted civil engineering guidance for complex projects.</h1>
+            <p>
+              We support public and private clients with practical consulting,
+              technical insight, and dependable project leadership from concept to delivery.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Book a Consultation</a>
+              <a class="btn btn-secondary" href="#services">Explore Services</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h3>What we do</h3>
+            <ul>
+              <li>Infrastructure planning and design support</li>
+              <li>Project management and technical review</li>
+              <li>Strategic advisory for civil engineering initiatives</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="services">
+          <h2 class="section-title">Core Services</h2>
+          <p class="section-subtitle">A focused set of services designed to move projects forward with clarity.</p>
+          <div class="cards">
+            <article class="card">
+              <h3>Project Advisory</h3>
+              <p>Strategic guidance for planning, feasibility, and delivery decisions.</p>
+            </article>
+            <article class="card">
+              <h3>Technical Review</h3>
+              <p>Independent review of civil engineering concepts, drawings, and scope.</p>
+            </article>
+            <article class="card">
+              <h3>Program Support</h3>
+              <p>Coordination support for schedules, stakeholder communication, and implementation.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="about" class="about">
+          <div class="about-block">
+            <h2 class="section-title">About CH Consulting</h2>
+            <p>
+              CH Consulting is a growing consulting practice focused on civil engineering
+              solutions that are efficient, practical, and tailored to the realities of each project.
+            </p>
+            <p>
+              The goal is simple: help teams make confident, informed decisions and keep projects moving.
+            </p>
+          </div>
+          <div class="about-block">
+            <h3>Why clients choose us</h3>
+            <ul>
+              <li>Clear communication and responsive support</li>
+              <li>Experience across varied engineering environments</li>
+              <li>A collaborative approach to problem solving</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="contact-box">
+            <h2 class="section-title">Let’s talk about your next project</h2>
+            <p>Whether you need early-stage guidance or support during delivery, we would be glad to connect.</p>
+            <a class="btn btn-primary" href="mailto:contact@chconsulting.com">contact@chconsulting.com</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 CH Consulting. Civil engineering consulting.</p>
+      </div>
+    </footer>
+  </body>
+</html>
