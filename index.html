@@ -1,168 +1,483 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Structura Civil Engineering — Consulting &amp; Design</title>
-  <meta name="description" content="Structura is a civil engineering consulting group specializing in structural, geotechnical, and infrastructure design.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Structura Ingeniería — Consultoría en Ingeniería Civil, Costa Rica</title>
+<meta name="description" content="Structura es una firma de consultoría en ingeniería civil especializada en diseño estructural, geotécnico y de infraestructura en Costa Rica.">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ===================== HEADER ===================== -->
-  <header class="site-header">
-    <div class="nav-row">
-      <a href="index.html" class="brand">
-        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 26L16 6L28 26" stroke="#ffffff" stroke-width="2.4" stroke-linejoin="round"/>
-          <path d="M10 26L16 16L22 26" stroke="#d65a31" stroke-width="2.4" stroke-linejoin="round"/>
-        </svg>
-        <span>STRUCTURA<small>CIVIL ENGINEERING CONSULTING</small></span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="site-header">
+  <div class="nav-row">
+    <button class="brand" data-scroll-to="" aria-label="Structura — ir al inicio">
+      <span class="name">STRUCTURA</span>
+      <span class="suffix">ING.</span>
+    </button>
 
-  <!-- ===================== HERO ===================== -->
-  <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Structural · Geotechnical · Infrastructure</p>
-      <h1>Engineering that carries the load, on paper and in the ground.</h1>
-      <p class="lede">We design and review structures, foundations, and infrastructure for clients who need calculations they can stand on — literally.</p>
+    <nav class="nav-links">
+      <button data-scroll-to="services" data-i18n="nav_services">Servicios</button>
+      <button data-scroll-to="projects" data-i18n="nav_projects">Proyectos</button>
+      <button data-scroll-to="about" data-i18n="nav_about">Nosotros</button>
+      <button data-scroll-to="contact" data-i18n="nav_contact">Contacto</button>
+      <button class="nav-contact-btn" data-scroll-to="contact" data-i18n="nav_contact_btn">Contacto</button>
+      <div class="lang-toggle">
+        <button data-lang="es">ES</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu">
+    <button data-scroll-to="services" data-i18n="nav_services">Servicios</button>
+    <button data-scroll-to="projects" data-i18n="nav_projects">Proyectos</button>
+    <button data-scroll-to="about" data-i18n="nav_about">Nosotros</button>
+    <button data-scroll-to="contact" data-i18n="nav_contact">Contacto</button>
+    <div class="mobile-lang-toggle">
+      <button data-lang="es">ESPAÑOL</button>
+      <button data-lang="en">ENGLISH</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+
+  <!-- Arenal Volcano illustration -->
+  <div class="hero-volcano">
+    <svg viewBox="0 0 520 420" fill="none" aria-hidden="true" width="100%" height="100%">
+      <ellipse cx="260" cy="400" rx="248" ry="28" stroke="currentColor" stroke-width="0.7" opacity="0.12"/>
+      <ellipse cx="260" cy="382" rx="210" ry="22" stroke="currentColor" stroke-width="0.7" opacity="0.14"/>
+      <ellipse cx="260" cy="362" rx="172" ry="17" stroke="currentColor" stroke-width="0.7" opacity="0.17"/>
+      <ellipse cx="260" cy="338" rx="136" ry="13" stroke="currentColor" stroke-width="0.7" opacity="0.20"/>
+      <ellipse cx="260" cy="310" rx="102" ry="10" stroke="currentColor" stroke-width="0.7" opacity="0.23"/>
+      <ellipse cx="260" cy="278" rx="72" ry="7" stroke="currentColor" stroke-width="0.7" opacity="0.27"/>
+      <ellipse cx="260" cy="240" rx="46" ry="5" stroke="currentColor" stroke-width="0.7" opacity="0.30"/>
+      <path d="M5 420 L195 75 L228 106 L260 24 L292 106 L325 75 L515 420 Z" fill="currentColor"/>
+      <path d="M256 20 C252 9 250 0 254 -8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.35"/>
+      <path d="M264 19 C269 8 271 -1 266 -9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.25"/>
+      <path d="M260 18 C255 6 252 -4 256 -12" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.18"/>
+    </svg>
+  </div>
+
+  <!-- Morpho Butterfly accent -->
+  <div class="hero-butterfly">
+    <svg viewBox="0 0 120 105" fill="none" aria-hidden="true" width="100%" height="100%">
+      <path d="M60 52 C56 36 40 18 14 26 C3 30 0 44 7 56 C16 70 38 68 52 60 Z" fill="currentColor" opacity="0.90"/>
+      <path d="M60 55 C50 64 38 72 26 76 C14 80 6 75 9 66 C14 57 32 57 46 62 Z" fill="currentColor" opacity="0.65"/>
+      <path d="M60 52 C64 36 80 18 106 26 C117 30 120 44 113 56 C104 70 82 68 68 60 Z" fill="currentColor" opacity="0.90"/>
+      <path d="M60 55 C70 64 82 72 94 76 C106 80 114 75 111 66 C106 57 88 57 74 62 Z" fill="currentColor" opacity="0.65"/>
+      <ellipse cx="60" cy="54" rx="2.5" ry="12" fill="currentColor"/>
+      <path d="M60 52 C50 40 34 34 16 36" stroke="currentColor" stroke-width="0.5" opacity="0.35" fill="none"/>
+      <path d="M60 52 C70 40 86 34 104 36" stroke="currentColor" stroke-width="0.5" opacity="0.35" fill="none"/>
+      <path d="M60 55 C50 60 38 64 25 64" stroke="currentColor" stroke-width="0.5" opacity="0.3" fill="none"/>
+      <path d="M60 55 C70 60 82 64 95 64" stroke="currentColor" stroke-width="0.5" opacity="0.3" fill="none"/>
+      <path d="M57 41 C52 30 47 20 42 14" stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none"/>
+      <path d="M63 41 C68 30 73 20 78 14" stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none"/>
+      <circle cx="42" cy="14" r="1.8" fill="currentColor"/>
+      <circle cx="78" cy="14" r="1.8" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <div class="hero-coords mono">9.7489° N / 83.7534° O</div>
+
+  <div class="hero-content">
+    <div class="eyebrow">
+      <div class="rule"></div>
+      <span data-i18n="hero_eyebrow">Consultoría en Ingeniería Civil — Costa Rica</span>
+    </div>
+
+    <h1>
+      <span data-i18n="hero_line1">Construimos</span><br>
+      <span data-i18n="hero_line2">lo que</span><br>
+      <span class="accent" data-i18n="hero_line3">sostiene</span><br>
+      <span data-i18n="hero_line4">al país.</span>
+    </h1>
+
+    <div class="hero-bottom-row">
+      <p class="hero-lede" data-i18n="hero_lede">Structura entrega soluciones de ingeniería de precisión para estructuras, infraestructura y sistemas de fundación. Desde las montañas volcánicas hasta las costas tropicales — construido para durar.</p>
       <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary">Start a project</a>
-        <a href="projects.html" class="btn btn-ghost">See our work</a>
-      </div>
-      <div class="hero-meta">
-        <div><strong>120+</strong>Projects delivered</div>
-        <div><strong>18</strong>Years practicing</div>
-        <div><strong>40+</strong>Municipal &amp; private clients</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== SERVICES SUMMARY ===================== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="section-label">What we do</p>
-        <h2>Three disciplines, one set of stamped drawings.</h2>
-      </div>
-      <div class="grid grid-3">
-        <div class="card">
-          <span class="tag">Structural</span>
-          <h3>Structural Design</h3>
-          <p>Steel, concrete, and timber structures — calculated, detailed, and reviewed for buildings and industrial facilities.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Geotechnical</span>
-          <h3>Geotechnical Studies</h3>
-          <p>Soil investigation, foundation design, and slope stability analysis grounded in site-specific data.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Infrastructure</span>
-          <h3>Infrastructure Planning</h3>
-          <p>Roads, drainage, and utility infrastructure designed to municipal standards and built to last.</p>
-        </div>
+        <button class="btn btn-accent" data-scroll-to="projects">
+          <span data-i18n="hero_btn_projects">Proyectos</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <button class="btn btn-outline" data-scroll-to="services">
+          <span data-i18n="hero_btn_services">Servicios</span>
+        </button>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ===================== FEATURED PROJECTS ===================== -->
-  <section class="section section-alt">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="section-label">Recent work</p>
-        <h2>A few projects we're proud to have stamped.</h2>
-      </div>
-      <div class="grid grid-3">
-        <div class="project-card">
-          <div class="project-thumb">
-            <img src="images/project1.jpg" alt="Exterior view of a completed structural project">
-          </div>
-          <div class="project-meta">
-            <span class="tag">Structural</span>
-            <h3>Project name</h3>
-            <p>One-line description of the project and your role in it.</p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb">
-            <img src="images/project2.jpg" alt="Site photo of a geotechnical project">
-          </div>
-          <div class="project-meta">
-            <span class="tag">Geotechnical</span>
-            <h3>Project name</h3>
-            <p>One-line description of the project and your role in it.</p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb">
-            <img src="images/project3.jpg" alt="Infrastructure project under construction">
-          </div>
-          <div class="project-meta">
-            <span class="tag">Infrastructure</span>
-            <h3>Project name</h3>
-            <p>One-line description of the project and your role in it.</p>
-          </div>
-        </div>
-      </div>
-      <p class="mt-0" style="margin-top:36px;"><a href="projects.html" class="btn btn-outline">View all projects</a></p>
-    </div>
-  </section>
+  <div class="scroll-cue">
+    <span class="mono" data-i18n="scroll_cue">scroll</span>
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+</section>
 
-  <!-- ===================== CTA ===================== -->
-  <section class="cta-band">
-    <div class="wrap">
-      <h2>Have a site that needs calculating?</h2>
-      <p>Tell us about your project — we'll tell you what it takes to build it safely.</p>
-      <a href="contact.html" class="btn btn-primary">Get in touch</a>
-    </div>
-  </section>
+<!-- ===================== STATS STRIP ===================== -->
+<div class="stats-strip">
+  <div class="stats-grid">
+    <div class="stat-cell"><strong>140+</strong><span data-i18n="stat1_label">Proyectos Entregados</span></div>
+    <div class="stat-cell"><strong>18</strong><span data-i18n="stat2_label">Años de Práctica</span></div>
+    <div class="stat-cell"><strong>7</strong><span data-i18n="stat3_label">Provincias Activas</span></div>
+    <div class="stat-cell"><strong>96%</strong><span data-i18n="stat4_label">Tasa en Plazo</span></div>
+  </div>
+</div>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <h4>Structura</h4>
-          <p style="color:rgba(255,255,255,0.6); max-width:320px;">Civil engineering consulting for structural, geotechnical, and infrastructure projects.</p>
-        </div>
-        <div>
-          <h4>Site</h4>
-          <ul>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:info@yourfirm.com">info@yourfirm.com</a></li>
-            <li><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
-          </ul>
-        </div>
+<!-- ===================== SERVICES ===================== -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><div class="rule"></div><span data-i18n="services_eyebrow">Disciplinas</span></div>
+        <h2><span data-i18n="services_h2_1">Nuestros</span><br><span data-i18n="services_h2_2">Servicios</span></h2>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year"></span> Structura Civil Engineering. All rights reserved.</span>
-        <span>Licensed Professional Engineers</span>
+      <div class="butterfly-callout">
+        <svg viewBox="0 0 120 105" fill="none" aria-hidden="true">
+          <path d="M60 52 C56 36 40 18 14 26 C3 30 0 44 7 56 C16 70 38 68 52 60 Z" fill="currentColor" opacity="0.90"/>
+          <path d="M60 55 C50 64 38 72 26 76 C14 80 6 75 9 66 C14 57 32 57 46 62 Z" fill="currentColor" opacity="0.65"/>
+          <path d="M60 52 C64 36 80 18 106 26 C117 30 120 44 113 56 C104 70 82 68 68 60 Z" fill="currentColor" opacity="0.90"/>
+          <path d="M60 55 C70 64 82 72 94 76 C106 80 114 75 111 66 C106 57 88 57 74 62 Z" fill="currentColor" opacity="0.65"/>
+          <ellipse cx="60" cy="54" rx="2.5" ry="12" fill="currentColor"/>
+          <path d="M57 41 C52 30 47 20 42 14" stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none"/>
+          <path d="M63 41 C68 30 73 20 78 14" stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none"/>
+          <circle cx="42" cy="14" r="1.8" fill="currentColor"/>
+          <circle cx="78" cy="14" r="1.8" fill="currentColor"/>
+        </svg>
+        <p class="mono" data-i18n="butterfly_caption">Mariposa Morpho — emblema de la biodiversidad que custodiamos.</p>
       </div>
     </div>
-  </footer>
 
-  <script src="js/script.js"></script>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-top">
+          <span class="service-code mono">/01</span>
+          <div class="service-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+        <h3 data-i18n="svc1_title">Ingeniería Estructural</h3>
+        <p data-i18n="svc1_desc">Análisis y diseño de sistemas de carga para edificios, puentes y estructuras industriales en terreno sísmico y tropical.</p>
+        <div class="tag-row">
+          <span data-i18n="svc1_tag1">Análisis Sísmico</span>
+          <span data-i18n="svc1_tag2">Concreto Reforzado</span>
+          <span data-i18n="svc1_tag3">Estructuras de Acero</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-top">
+          <span class="service-code mono">/02</span>
+          <div class="service-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+        <h3 data-i18n="svc2_title">Consultoría Geotécnica</h3>
+        <p data-i18n="svc2_desc">Investigación de suelos y diseño de fundaciones para las complejas condiciones volcánicas, aluviales y de pendiente de Costa Rica.</p>
+        <div class="tag-row">
+          <span data-i18n="svc2_tag1">Diseño de Fundaciones</span>
+          <span data-i18n="svc2_tag2">Estabilidad de Taludes</span>
+          <span data-i18n="svc2_tag3">Muros de Retención</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-top">
+          <span class="service-code mono">/03</span>
+          <div class="service-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+        <h3 data-i18n="svc3_title">Planificación de Infraestructura</h3>
+        <p data-i18n="svc3_desc">Planificación maestra de carreteras, drenaje y servicios en entornos definidos por alta pluviosidad, ríos y topografía montañosa.</p>
+        <div class="tag-row">
+          <span data-i18n="svc3_tag1">Drenaje Urbano</span>
+          <span data-i18n="svc3_tag2">Diseño Vial</span>
+          <span data-i18n="svc3_tag3">Estudios Hidrológicos</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-top">
+          <span class="service-code mono">/04</span>
+          <div class="service-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+        <h3 data-i18n="svc4_title">Gestión de Proyectos</h3>
+        <p data-i18n="svc4_desc">Entrega integral desde el diseño conceptual hasta la construcción dentro del marco de permisos y cumplimiento ambiental de Costa Rica.</p>
+        <div class="tag-row">
+          <span data-i18n="svc4_tag1">Control de Costos</span>
+          <span data-i18n="svc4_tag2">Cumplimiento SETENA</span>
+          <span data-i18n="svc4_tag3">Gestión de Cronograma</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><div class="rule"></div><span data-i18n="projects_eyebrow">Casos de Estudio</span></div>
+        <h2><span data-i18n="projects_h2_1">Proyectos</span><br><span data-i18n="projects_h2_2">Destacados</span></h2>
+      </div>
+      <button class="btn" style="padding:0;">
+        <span data-i18n="projects_view_all">Ver Todo</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </div>
+
+    <div class="project-tabs">
+      <button class="active mono">PRJ-001</button>
+      <button class="mono">PRJ-002</button>
+      <button class="mono">PRJ-003</button>
+    </div>
+
+    <div class="project-panel active">
+      <div class="project-layout">
+        <div class="project-image">
+          <img src="images/project1.jpg" alt="Puente Río Sarapiquí">
+          <div class="project-location mono">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:-1px;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Heredia, CR
+          </div>
+        </div>
+        <div class="project-info">
+          <div>
+            <div class="project-meta-line"><span data-i18n="prj1_category">Ingeniería de Puentes</span> — 2023</div>
+            <h3 data-i18n="prj1_title">Puente Río Sarapiquí</h3>
+            <p data-i18n="prj1_desc">Estructura suspendida que cruza el corredor del río Sarapiquí, diseñada para cargas de inundación estacional y condiciones de viento tropical.</p>
+            <div class="project-stat-badge">186m span</div>
+          </div>
+          <button class="project-link-btn">
+            <span data-i18n="project_view_case">Ver Caso Completo</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-panel">
+      <div class="project-layout">
+        <div class="project-image">
+          <img src="images/project2.jpg" alt="Viaducto Braulio Carrillo">
+          <div class="project-location mono">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:-1px;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            San José, CR
+          </div>
+        </div>
+        <div class="project-info">
+          <div>
+            <div class="project-meta-line"><span data-i18n="prj2_category">Estructural Sísmico</span> — 2024</div>
+            <h3 data-i18n="prj2_title">Viaducto Braulio Carrillo</h3>
+            <p data-i18n="prj2_desc">Viaducto elevado que cruza el corredor Braulio Carrillo, diseñado bajo especificaciones de zona sísmica IV sobre fundaciones de basalto volcánico.</p>
+            <div class="project-stat-badge">Zona sísmica III</div>
+          </div>
+          <button class="project-link-btn">
+            <span data-i18n="project_view_case">Ver Caso Completo</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-panel">
+      <div class="project-layout">
+        <div class="project-image">
+          <img src="images/project3.jpg" alt="Sistema Pluvial Limón">
+          <div class="project-location mono">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:-1px;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Limón, CR
+          </div>
+        </div>
+        <div class="project-info">
+          <div>
+            <div class="project-meta-line"><span data-i18n="prj3_category">Infraestructura Hidráulica</span> — 2024</div>
+            <h3 data-i18n="prj3_title">Sistema Pluvial Limón</h3>
+            <p data-i18n="prj3_desc">Red de drenaje pluvial para la zona costera del Caribe, diseñada para los promedios de lluvia anual más altos del continente americano.</p>
+            <div class="project-stat-badge">4,800mm/año</div>
+          </div>
+          <button class="project-link-btn">
+            <span data-i18n="project_view_case">Ver Caso Completo</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section about-section">
+  <div class="about-watermark">STRUCTURA</div>
+  <div class="wrap">
+    <div class="about-grid">
+
+      <div>
+        <div class="bridge-card">
+          <div class="label"><span class="accent">///</span> <span data-i18n="bridge_label">Infraestructura en terreno tropical</span></div>
+          <svg viewBox="0 0 640 300" fill="none" aria-hidden="true">
+            <path d="M0 300 C60 220 110 240 180 185 C220 158 248 168 320 160 C392 168 420 158 460 185 C530 240 580 220 640 300 Z" fill="currentColor" opacity="0.13"/>
+            <path d="M0 265 C50 248 95 258 140 244 C180 232 215 238 250 232" stroke="currentColor" stroke-width="0.8" opacity="0.18" fill="none"/>
+            <path d="M390 232 C425 238 460 232 500 244 C545 258 590 248 640 265" stroke="currentColor" stroke-width="0.8" opacity="0.18" fill="none"/>
+            <rect x="88" y="195" width="30" height="18" fill="currentColor" opacity="0.35"/>
+            <rect x="522" y="195" width="30" height="18" fill="currentColor" opacity="0.35"/>
+            <rect x="138" y="70" width="11" height="148" fill="currentColor"/>
+            <rect x="128" y="66" width="31" height="9" fill="currentColor"/>
+            <rect x="130" y="100" width="27" height="4" fill="currentColor" opacity="0.5"/>
+            <rect x="491" y="70" width="11" height="148" fill="currentColor"/>
+            <rect x="481" y="66" width="31" height="9" fill="currentColor"/>
+            <rect x="483" y="100" width="27" height="4" fill="currentColor" opacity="0.5"/>
+            <path d="M143 74 Q320 172 496 74" stroke="currentColor" stroke-width="2.5" fill="none"/>
+            <path d="M143 80 Q320 176 496 80" stroke="currentColor" stroke-width="1" fill="none" opacity="0.45"/>
+            <rect x="136" y="192" width="368" height="7" fill="currentColor"/>
+            <line x1="136" y1="192" x2="504" y2="192" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+            <line x1="136" y1="199" x2="504" y2="199" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+            <line x1="164" y1="78.9" x2="164" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="190" y1="86.0" x2="190" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="216" y1="93.6" x2="216" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="242" y1="100.4" x2="242" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="268" y1="105.9" x2="268" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="294" y1="109.6" x2="294" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="320" y1="111" x2="320" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="346" y1="109.6" x2="346" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="372" y1="105.9" x2="372" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="398" y1="100.4" x2="398" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="424" y1="93.6" x2="424" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="450" y1="86.0" x2="450" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <line x1="476" y1="78.9" x2="476" y2="192" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+            <path d="M103 200 L143 74" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+            <path d="M537 200 L496 74" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+          </svg>
+          <div class="foot-row">
+            <span class="muted" data-i18n="bridge_type">Tipología: puente colgante sobre río</span>
+            <span class="accent" data-i18n="bridge_zone">Zona sísmica IV</span>
+          </div>
+        </div>
+
+        <div class="context-callout">
+          <p data-i18n="context_callout">Costa Rica concentra el <strong>6% de la biodiversidad mundial</strong> en menos del 0.03% de la superficie terrestre. Toda estructura que construimos coexiste con ese legado — esto define nuestra filosofía de diseño.</p>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <div class="eyebrow"><div class="rule"></div><span data-i18n="about_eyebrow">Quiénes Somos</span></div>
+        <h2><span data-i18n="about_h2_1">Ingeniería</span><br><span data-i18n="about_h2_2">forjada en</span><br><span data-i18n="about_h2_3">precisión.</span></h2>
+
+        <div class="about-copy-body">
+          <p data-i18n="about_p1">Structura nació con un principio claro: la gran ingeniería es invisible. Es simplemente lo que mantiene todo en pie. Durante casi dos décadas hemos aplicado esa disciplina en proyectos que van desde fundaciones residenciales hasta infraestructura pública crítica.</p>
+          <p data-i18n="about_p2">Operamos en un país de geografía excepcional — volcanes activos, ríos de alta energía, suelos volcánicos complejos y precipitaciones entre las más altas del continente. Eso no es un obstáculo: es nuestro dominio.</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-cell"><span class="n mono">01</span><h4 data-i18n="val1_title">Integridad Técnica</h4><p data-i18n="val1_desc">Cada cálculo verificado. Cada suposición documentada.</p></div>
+          <div class="value-cell"><span class="n mono">02</span><h4 data-i18n="val2_title">Factibilidad en Campo</h4><p data-i18n="val2_desc">Diseñamos para constructibilidad, no solo para cumplimiento.</p></div>
+          <div class="value-cell"><span class="n mono">03</span><h4 data-i18n="val3_title">Claridad al Cliente</h4><p data-i18n="val3_desc">Ingeniería compleja en recomendaciones comprensibles.</p></div>
+          <div class="value-cell"><span class="n mono">04</span><h4 data-i18n="val4_title">Responsabilidad Ambiental</h4><p data-i18n="val4_desc">Obras que respetan el entorno natural que las rodea.</p></div>
+        </div>
+
+        <button class="btn btn-outline" style="margin-top:40px;" data-scroll-to="contact">
+          <span data-i18n="about_cta">Iniciar un Proyecto</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section section-alt">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-heading">
+        <div class="eyebrow"><div class="rule"></div><span data-i18n="contact_eyebrow">Contacto</span></div>
+        <h2><span data-i18n="contact_h2_1">Construyamos</span><br><span data-i18n="contact_h2_2">algo que</span><br><span data-i18n="contact_h2_3">perdure.</span></h2>
+
+        <div class="contact-detail-list mono">
+          <div><span class="accent"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span><span>contacto@structura-ing.cr</span></div>
+          <div><span class="accent"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span>+506 2200 0000</span></div>
+          <div><span class="accent"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span>San José, Costa Rica</span></div>
+        </div>
+
+        <div class="cert-box">
+          <div class="title mono" data-i18n="cert_title">Certificaciones</div>
+          <div class="cert-tags mono">
+            <span data-i18n="cert1">CFIA Registrado</span>
+            <span data-i18n="cert2">ASCE Member</span>
+            <span data-i18n="cert3">Código Sísmico CR</span>
+            <span data-i18n="cert4">SETENA Acreditado</span>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        NOTE: GitHub Pages can't run server-side code, so this form does not
+        send email by itself yet. Submitting just shows a confirmation
+        message (see handleContactSubmit in js/script.js). To make it
+        actually send you an email, connect a free service like Formspree
+        (formspree.io) or Getform (getform.io): add their action="..." URL
+        and method="POST" to the <form> tag below, and remove onsubmit.
+      -->
+      <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)">
+        <div class="contact-form-row-2">
+          <input type="text" id="name" name="name" required data-i18n-placeholder="form_name" placeholder="Nombre completo">
+          <input type="email" id="email" name="email" required data-i18n-placeholder="form_email" placeholder="Correo electrónico">
+        </div>
+        <input type="text" id="company" name="company" data-i18n-placeholder="form_company" placeholder="Empresa / Organización">
+        <select id="service" name="service">
+          <option value="" disabled selected data-i18n="form_service">Servicio requerido</option>
+          <option data-i18n="svc1_title">Ingeniería Estructural</option>
+          <option data-i18n="svc2_title">Consultoría Geotécnica</option>
+          <option data-i18n="svc3_title">Planificación de Infraestructura</option>
+          <option data-i18n="svc4_title">Gestión de Proyectos</option>
+        </select>
+        <textarea id="message" name="message" rows="5" required data-i18n-placeholder="form_message" placeholder="Describa su proyecto..."></textarea>
+        <button type="submit" class="contact-submit">
+          <span data-i18n="form_submit">Enviar Consulta</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <p id="form-status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-row">
+    <div class="footer-brand">
+      <svg viewBox="0 0 80 170" fill="none" aria-hidden="true">
+        <path d="M37 98 C34 118 30 142 27 170" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <path d="M43 98 C46 118 50 142 53 170" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <path d="M40 100 C40 122 40 146 40 172" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.45"/>
+        <ellipse cx="40" cy="76" rx="14" ry="24" fill="currentColor"/>
+        <path d="M26 72 C20 78 18 88 22 96 C26 100 32 98 38 94" fill="currentColor" opacity="0.7"/>
+        <path d="M54 72 C60 78 62 88 58 96 C54 100 48 98 42 94" fill="currentColor" opacity="0.7"/>
+        <circle cx="40" cy="46" r="13" fill="currentColor"/>
+        <path d="M34 35 C30 24 27 14 30 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M38 33 C36 21 36 11 40 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M42 34 C45 22 48 12 50 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <path d="M46 36 C51 25 55 16 56 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6"/>
+        <path d="M50 46 L60 43 L52 50 Z" fill="currentColor"/>
+      </svg>
+      <div>
+        <div class="name-row"><strong>STRUCTURA</strong><span class="suffix mono">ING.</span></div>
+        <p class="tagline mono" data-i18n="footer_tagline">Hecho en Costa Rica — pura vida.</p>
+      </div>
+    </div>
+
+    <p class="footer-copy" data-i18n="footer_copy">© 2026 Structura Ingeniería Consultora. Todos los derechos reservados.</p>
+
+    <div class="footer-links">
+      <button data-i18n="footer_privacy">Privacidad</button>
+      <button data-i18n="footer_terms">Términos</button>
+      <button data-i18n="footer_linkedin">LinkedIn</button>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
