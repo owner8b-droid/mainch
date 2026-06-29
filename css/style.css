@@ -185,6 +185,21 @@ p { color: var(--muted-foreground); font-weight: 300; margin: 0; }
 }
 .nav-links button:hover { color: var(--foreground); }
 
+.nav-contact-btn {
+  margin-left: 16px;
+  padding: 8px 20px;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  border: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: background 0.3s;
+}
+.nav-contact-btn:hover { background: rgba(82,176,106,0.85); }
+
 .lang-toggle {
   display: flex;
   align-items: center;
